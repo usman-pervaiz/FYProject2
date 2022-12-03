@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Password</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Atomic Age' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <img class="logo" src="{{url_for('static',filename='images/logo.PNG')}}"><br>
+    </header>
+    <div class="div1">
+        <h2>Reset Password</h2>
+        <div class="indiv">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                    {{ message }}
+                    </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <form method="post" action="">
+                {{ form.hidden_tag() }}
+                <b>{{form.password.label()}}</b><br><br>
+                {{ form.password(class="write", placeholder="Type Password")}}<br><br>
+                <b>{{form.confirm_password.label()}}</b><br><br>
+                {{ form.confirm_password(class="write", placeholder="Type Password")}}<br><br>
+                {{ form.submit(class="ResetPasswordButton")}}<br>
+                <hr>
+            </form>
+        </div>
+    </div>
+    <div class="div2"></div>
+
+</body>
+</html>

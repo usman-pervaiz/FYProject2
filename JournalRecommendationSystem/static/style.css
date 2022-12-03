@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Oswald:wght@300&display=swap');
+.alert {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  #leftbox{
+    float:left;
+    width:25%;
+    height:280px;
+}
+
+  .alert.alert-success {
+    background-color: rgba(227, 253, 235, 1);
+    border-color: rgba(38, 179, 3, 1);
+    color: rgba(60, 118, 61, 1);
+  }
+  
+  .alert.alert-info {
+    background-color: rgba(217, 237, 247, 1);
+    color: rgba(49, 112, 143, 1);
+    border-color: rgba(126, 182, 193, 1);
+  }
+  
+  
+  .alert.alert-warning {
+    background-color: rgba(252, 248, 227, 1);
+    border-color: rgba(177, 161, 129, 1);
+    color: rgba(138, 109, 59, 1);
+  }
+  
+  .alert.alert-danger {
+    background-color: rgba(248, 215, 218, 1);
+    border-color: rgba(220, 53, 69, 1);
+    color: rgba(114, 28, 36,1);
+  }
+
+header{
+    align-items: center;
+    padding: 10px 5%;
+    background-color:#F4F4F4;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.logo {
+    width: 90px;
+    height: 60px;
+    margin-right: auto;
+}
+
+.hda{
+    text-decoration: none;
+    padding: 0px 10px 0px;
+    color: black;
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 520;
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    vertical-align:baseline;
+    border-radius: 50%;
+    border: 3px solid #2B2B2B;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-tag{
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #2B2B2B;
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 520;
+    font-size: 15px;
+    margin-left: -70px;
+    border-radius: 3px;
+    
+}
+
+.dropdown-tag a{
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-tag a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-tag {display: block;}
+
+.navButton{
+    text-align: center;
+    background-color: #2B2B2B;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    float: right;
+    color: white;
+    font-family: 'Monsterrat', sans-serif;
+    font-size:small;
+    margin-left: 5px;
+    width:auto;
+    height: 30px;
+
+}
+
+.mid{
+    max-width: auto;
+    height: 100px;
+    margin-top: 250px; 
+}
+
+.search{
+    width: 70%;
+    height: 30px;
+    display: inline-block;
+
+}
+
+.searchButton{
+    color: white;
+    background-color: #2B2B2B;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: small;
+    width:auto;
+    height: 30px;   
+}
+
+html, body{
+    text-align: center;
+    height: 100%;
+    
+}
+
+
+div.div1 {
+    width: 35%;
+    height: auto;
+    background-color: white;
+    float: left;
+    font-family: 'Monsterrat', sans-serif;
+    text-align: center;
+      
+}
+
+div.div2{
+    width: 65%;
+    height: 100%;
+    background-color:#2B2B2B ;
+    float: left;
+    background-image: url("/static/images/bg.png");
+    background-repeat: repeat;
+    background-size: 50px 50px;    
+}
+
+div.indiv{
+    min-height: auto;
+    min-width: 100%;
+    background-color:#F8F9FA;
+    border-radius: 15px;
+    margin-right: -200px;
+    margin-top: 30px;
+    text-align: left;
+    font-family: 'Monsterrat', sans-serif;
+    padding: 30px 50px;
+    float: right;
+    color: black;
+    position: relative;
+    box-shadow: 0px 3px 7px #2B2B2B;
+
+}
+
+  
+.write{
+    width: 100%;
+    display: inline-block;
+    min-height: 35px;
+    border-radius: 5px;
+    border-color: black;
+    padding: 3px 10px ;
+    margin-right: 70px;
+}
+
+.write-2{
+    width: 60%;
+    display: inline-block;
+    min-height: 35px;
+    border-radius: 5px;
+    border-color: black;
+    padding: 3px 10px;
+
+}
+
+.barea{
+    width: 40%;
+    display: inline-block;
+    min-height: 100px;
+    border-radius: 5px;
+    min-width: 60%;
+    border-color:black;
+    border-width: 2px;
+    padding: 3px 10px;
+}
+
+.ResetPasswordButton{
+    background-color: #2B2B2B;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: small;
+    text-align: center;
+    width:50%;
+    height: 30px; 
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 2px 2px 3px #2B2B2B;
+}
+
+.SignButton{
+    background-color: #2B2B2B;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-family: 'Monsterrat', sans-serif;
+    text-align: center;  
+    font-size: small;
+    width:25%;
+    height: 30px;   
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 2px 2px 3px #2B2B2B;
+}
+
+.RPButton{
+    background-color: #2B2B2B;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-family: 'Monsterrat', sans-serif;
+    text-align: center;  
+    font-size: small;
+    width:25%;
+    height: 30px;   
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 2px 2px 3px #2B2B2B;
+}
+
+.NaccButton{
+    background-color: #2B2B2B;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-family: 'Monsterrat', sans-serif;
+    text-align: center;  
+    font-size: small;
+    height: 30px;   
+    margin-left: 22%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 2px 2px 3px #2B2B2B;
+}
+
+
+.link{
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 11px;
+    margin-left: 30%;
+    color: #2B2B2B;
+}
+
+
+.link2{
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 11px;
+    margin-left: 20%;
+    color: #2B2B2B;
+}
+span{
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #2B2B2B; 
+}
+
+.container{
+    width: 30%;
+    position: absolute;
+    transform: translate(-120%, -5%);
+}
+
+.container-2{
+    width: 30%;
+    position: absolute;
+    transform: translate(100%, 50%);
+}
+.search-box{
+    width: 120%;
+    position: relative;
+    display: flex;
+}
+
+.search2{
+    width: 100%;
+    border: 3px solid black;
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    outline: none;
+    color: #9dbfaf;
+    border-radius: 3px 0 0 3px ;
+}
+
+.search2:focus{
+    color: #000;
+    box-shadow: 0 0 5px black;
+}
+
+.search-btn{
+    width: 40px;
+    height: 46px;
+    border: 1px solid black;
+    background: black;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.result-1{
+    text-align: left;
+    justify-content: left;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.result-1 h1{
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.result-1 h2{
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.result-1 a{
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.profile{
+    text-align: left;
+    justify-content: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.profile label{
+    font-family: 'Monsterrat', sans-serif;
+    text-align: left;
+}
+
+.profile a{
+    color: grey;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 13px;
+}
+
+.profile h2{
+    font-family: 'Monsterrat', sans-serif;
+}
+
+
+.ConButton{
+    padding: 5px 30px;
+    background-color: #2B2B2B;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: small;
+    text-align: center;
+    box-shadow: 2px 2px 3px #2B2B2B;
+    width:auto;
+    height: 30px; 
+}
+
+.lib{
+    align-items: center;
+    padding: 5px 10%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.libButton{
+    padding: 5px 25px;
+    background-color: #2B2B2B;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    float: right;
+    color: white;
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 15px;
+    box-shadow: 2px 2px 3px #2B2B2B;
+}
+
+.lib h1{
+    margin-right: auto;
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.container-3{
+    width: 40%;
+    position: absolute;
+    transform: translate(25%, 10%);
+}
+
+.title{
+    color: #FFFFFF;
+    background-color: #2B2B2B;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 13px;
+    padding: 8px 1%;
+    margin-right: 42%;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.result-2{
+    text-align: left;
+    justify-content: left;
+    margin-left: 10%;
+    margin-right: 42%;
+    padding: 40px 1%;
+}
+
+.result-2 a{
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.required{
+    color: red;
+}
+
+.upload{
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 30px 5%;
+}
+
+.file{
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.upload a{
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 12px;
+    margin-left: 15%;
+    color: gray;
+}
+
+.recButton{
+    padding: 5px 25px;
+    background-color: #2B2B2B;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    float: left;
+    color: white;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: small;
+    box-shadow: 2px 2px 3px #2B2B2B;
+    width:auto;
+    height: 30px;  
+}
+
+.result-3{
+    text-align: left;
+    justify-content: left;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.result-3 h1{
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.result-3 h2{
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    margin-left: 5%;
+}
+
+.result-3 a{
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #136EF6;
+    margin-left: 10%;
+}

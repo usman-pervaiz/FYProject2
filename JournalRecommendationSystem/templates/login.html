@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <img class="logo" src="{{url_for('static',filename='images/logo.PNG')}}"><br>
+    </header>
+
+    <div class="div1">
+        <h2>Sign In</h2>
+        <p>Sign in with your<b> username</b></p>
+            
+        <div class="indiv">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+            <form method="post" action="">
+                {{ form.hidden_tag() }}
+                <b>{{ form.username.label() }}</b><br><br>
+                {{ form.username(class="write",  placeholder="Enter Your Username") }}<br><br>
+                <b>{{ form.password.label() }}</b><br><br>
+                {{ form.password(class="write",placeholder="Minimum of 6 Characters in Length") }}<br><br>
+                {{ form.submit(class="SignButton") }}<br>
+            </form>
+            <hr>
+            <a href="{{url_for('register')}}" class="link">Register Now</a><br>
+            <a href="{{url_for('reset_request')}}" class="link">Forgot Password</a><br>
+        </div>
+    </div>
+    <div class="div2"></div>
+</body>
+</html>

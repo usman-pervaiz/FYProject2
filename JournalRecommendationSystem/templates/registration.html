@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Atomic Age' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <img class="logo" src="{{url_for('static',filename='images/logo.PNG')}}"><br>
+    </header>
+    <div class="div1">
+        <h2>Create an account for free</h2>
+        <div class="indiv">
+             {% if message  %}
+             <div class="alert alert-danger" role="alert">{{ message }}</div>     
+            {% endif %}
+            <form method="post" action="">
+                {{ form.hidden_tag() }}
+                <b>{{ form.username.label() }}</b><br><br>
+                {{ form.username(class="write" , placeholder="Enter Your Username") }}<br><br>
+                <b>{{ form.name.label() }}</b><br><br>
+                {{ form.name(class="write" , placeholder="Enter Your Full Name") }}<br><br>
+                <b>{{ form.email.label() }}</b><br><br>
+                {{ form.email(class="write" , placeholder="Enter Your Email Address") }}<br><br>
+                <b>{{ form.password.label() }}</b><br><br>
+                {{ form.password(class="write" , placeholder="Minimum of 6 Characters in Length") }}<br><br>
+                <b>{{ form.confirm_password.label() }}</b><br><br>
+                {{ form.confirm_password(class="write" , placeholder="Rewrite Password") }}<br><br>
+                {{ form.submit(class="NaccButton") }}<br>
+            </form>
+            <hr>
+            <a href="{{url_for('login')}}" class="link2">Already have an account?</a><br>
+        </div>
+    </div>
+    <div class="div2"></div>   
+    
+</body>
+</html>
